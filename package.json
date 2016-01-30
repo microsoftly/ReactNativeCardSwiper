@@ -1,6 +1,6 @@
 {
   "name": "react-native-card-swiper",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Tinder like component for react native",
   "main": "./containers/CardSwiperContainer.js",
   "scripts": {
@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/matts310/ReactNativeCardSwiper#readme",
   "dependencies": {
-    "react-native": "^0.17.0",
     "clamp": "^1.0.1"
   },
   "devDependencies": {
