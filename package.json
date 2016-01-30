@@ -1,0 +1,35 @@
+{
+  "name": "react-native-card-swiper",
+  "version": "0.0.5",
+  "description": "Tinder like component for react native",
+  "main": "./containers/CardSwiperContainer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matts310/ReactNativeCardSwiper.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "swiper",
+    "tinder",
+    "card"
+  ],
+  "author": "Matthew Schwartz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matts310/ReactNativeCardSwiper/issues"
+  },
+  "homepage": "https://github.com/matts310/ReactNativeCardSwiper#readme",
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react-native": "^0.17.0",
+    "clamp": "^1.0.1"
+  }
+}
