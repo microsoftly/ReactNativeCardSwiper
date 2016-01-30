@@ -1,5 +1,3 @@
-'use strict';
-
 import React, {
     AppRegistry, StyleSheet, Text, View, Animated, Component, PanResponder,
 }
@@ -8,18 +6,28 @@ import clamp from 'clamp';
 import {
     SWIPE_THRESHOLD, CardViewConstants
 }
-from '../config/constants.js'
+from './config/constants.js'
 import {
     cardAnimation, cardReturnToOriginAnimation, cardOffScreenAnimation
 }
-from '../animations/CardAnimation'
+from './animations/CardAnimation'
 import {
     CreateAcceptAnimation, CreateRejectAnimation
 }
-from '../animations/AcceptancePopup';
+from './animations/AcceptancePopup';
 import EventEmitter from 'EventEmitter';
 
 class ReactNativeCardSwiper extends Component {
+    static defaultProps = {
+        AcceptAnimation: true,
+        RejectAnimation: true,
+        acceptText: 'Yep',
+        rejectText: 'Nope',
+        onReject: () => {},
+        onAccept: () => {},
+        fadeWithPan: true,
+    };
+
     static propTypes = {
         acceptAnimation: React.PropTypes.bool,
         rejectAnimation: React.PropTypes.bool,
@@ -30,16 +38,6 @@ class ReactNativeCardSwiper extends Component {
         getNextCardDataSource: React.PropTypes.func.isRequired,
         fadeWithPan: React.PropTypes.bool,
         children: React.PropTypes.element.isRequired,
-    };
-
-    static defaultProps = {
-        AcceptAnimation: true,
-        RejectAnimation: true,
-        acceptText: 'Yep',
-        rejectText: 'Nope',
-        onReject: () => {},
-        onAccept: () => {},
-        fadeWithPan: true,
     };
 
     constructor(props) {

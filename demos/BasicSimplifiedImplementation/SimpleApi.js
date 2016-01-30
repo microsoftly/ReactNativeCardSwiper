@@ -1,8 +1,7 @@
 class SimpleApi {
     constructor() {
-        this.colors = ['purple', 'green', 'orange', 'blue', 'red', 'black', 'green'];
+        this.colors = ['green', 'purple', 'green', 'orange', 'blue', 'red'];
         this.i = 0;
-
     }
 
     goToNext() {
