@@ -1,10 +1,10 @@
 {
-  "name": "card-swiper",
-  "version": "0.1.0",
+  "name": "card_swiper",
+  "version": "0.0.1",
   "description": "Tinder like component for react native",
   "main": "CardSwiper.js",
   "scripts": {
-    "build": "babel src --out-file card_swiper.js",
+    "build": "babel s --out-file card_swiper.js",
     "start": "babel src --out-dir dist --presets es2015,react",
     "watch": "babel src --out-dir dist --watch --presets es2015,react"
   },
@@ -28,8 +28,7 @@
   },
   "homepage": "https://github.com/matts310/ReactNativeCardSwiper#readme",
   "dependencies": {
-    "clamp": "^1.0.1",
-    "react-native": "0.19.0"
+    "clamp": "^1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
